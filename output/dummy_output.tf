@@ -1,3 +1,3 @@
 output "var_output" {
-  value = "something"
+  value = "something_new"
 }
