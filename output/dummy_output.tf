@@ -4,7 +4,7 @@ output "var_output" {
 
 terraform {
   backend "s3" {
-    bucket = "mybucket"
+    bucket = "migration-remote-backend"
     key    = "path/to/my/key"
     region = "us-east-1"
   }
