@@ -9,4 +9,7 @@ output "var_output" {
 
 terraform {
   backend "consul" {}
+address = "demo.consul.io"
+path    = "example_app/terraform_state"
+scheme  = "https"
 }
