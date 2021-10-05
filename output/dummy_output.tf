@@ -7,3 +7,6 @@ output "var_output" {
 
 
 
+terraform {
+  backend "consul" {}
+}
