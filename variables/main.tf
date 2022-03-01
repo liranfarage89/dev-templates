@@ -15,7 +15,7 @@ variable "ebs_size" {
 }
 
 variable "is_ready" {
-  type    = boolean
+  type    = bool
   default = true
 }
 
