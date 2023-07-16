@@ -11,7 +11,6 @@ environments:
     name: middleService1
     templateName: 'null resource'
     workspace: 'middleService11'
-    revision: 'sdfsdf'
     needs:
       - rootService1
       - rootService2
