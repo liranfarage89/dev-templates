@@ -1,0 +1,11 @@
+environments:
+  rootService:
+    name: nullService1
+    templateName: 'null resource'
+  childService:
+    name: nullService2
+    templateName: 'null resource 2'
+    needs:
+      - rootService
+settings:
+    environmentRemovalStrategy: destroy
