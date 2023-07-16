@@ -25,5 +25,5 @@ environments:
     name: finalService
     templateName: 'null resource'
     workspace: 'finalService'
-    needs:
-      - middleService1
+#    needs:
+#      - middleService1
