@@ -6,7 +6,7 @@ environments:
   rootService2:
     name: rootService2
     templateName: 'null resource'
-     workspaceName: 'rootService2'
+    workspaceName: 'rootService2'
   middleService1:
     name: middleService1
     templateName: 'null resource'
