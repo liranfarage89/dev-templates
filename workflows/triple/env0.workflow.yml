@@ -9,7 +9,7 @@ environments:
     workspace: 'rootService2111'
   middleService1:
     name: middleService1
-    templateName: 'null with sleep'
+    templateName: 'null resource'
     workspace: 'middleService1111'
     needs:
       - rootService1
@@ -23,7 +23,7 @@ environments:
       - rootService2
   finalService:
     name: finalService
-    templateName: 'null resource'
+    templateName: 'null with sleep'
     workspace: 'finalService111'
     needs:
       - middleService1
