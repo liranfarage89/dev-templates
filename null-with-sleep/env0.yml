@@ -7,5 +7,5 @@ deploy:
         - echo "Why can't we not be sober"
         - echo "Just want to start this over"
         - echo "Why can't we sleep forever"
-        - sleep 5m
+        - sleep 2m
         - echo "Just want to start this over"
