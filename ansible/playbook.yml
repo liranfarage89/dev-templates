@@ -1,0 +1,6 @@
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: hello
+      ansible.builtin.debug:
+        msg: "env0 QA APO-224"
