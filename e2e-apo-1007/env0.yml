@@ -1,0 +1,16 @@
+version: 2
+
+deploy:
+  steps:
+    terraformInit:
+      before:
+        - name: Build and push image
+          run: |
+            set -ex
+            id
+            sudo apk add docker-cli docker-cli-buildx
+            docker version
+            docker run -d --name registry -p 5000:5000 registry:2
+            docker build -t localhost:5000/dind-e2e:1 .
+            docker push localhost:5000/dind-e2e:1
+            docker run --rm localhost:5000/dind-e2e:1 cat /hello
